@@ -1,79 +1,76 @@
-# Air_Canvas
-Air Canvas is a fun Computer Vision project built using OpenCV and Python. It lets you draw in the air using colored objects (like a marker cap or colored tape) tracked by your webcam — turning your camera feed into a virtual drawing canvas!
+#  Air Canvas
 
-Features
-Draw in real-time by moving a colored object in front of your webcam.
+**Air Canvas** is a fun Computer Vision project built with **Python** and **OpenCV**. It lets you draw in the air by moving colored objects in front of your webcam — turning your camera feed into a virtual whiteboard!
 
-Supports multiple colors: Blue, Red, and Green.
+---
 
-Toggle Eraser Mode to erase parts of your drawing.
+##  Features
 
-Adjust brush size on the fly.
+- Draw in real-time using a colored object (like a marker cap or colored tape).
+- Supports multiple colors: **Blue**, **Red**, and **Green**.
+- Toggle **Eraser Mode** to erase parts of your drawing.
+- Change **brush size** while drawing.
+- Clear the entire canvas instantly.
+- Save your drawing as an image file.
 
-Clear the canvas with a single key press.
+---
 
-Save your masterpiece as an image file.
+##  How It Works
 
-How It Works
-Uses HSV color space to detect colored objects.
+- Uses the **HSV color space** to detect colored objects.
+- Tracks the object’s movement to draw lines on a virtual canvas.
+- Overlays the virtual canvas on the live webcam feed.
+- Lets you control the drawing with simple keyboard shortcuts.
 
-Tracks the movement of the object to draw lines on a virtual canvas.
+---
 
-Merges the virtual canvas with the live webcam feed for display.
+##  Controls
 
-Supports basic keyboard controls for an interactive experience.
+| Key | Action |
+|-----|--------|
+| `1` | Small brush size |
+| `2` | Medium brush size |
+| `3` | Large brush size |
+| `E` | Toggle eraser mode |
+| `C` | Clear the canvas |
+| `S` | Save the drawing (`air_canvas_output.png`) |
+| `Q` | Quit the application |
 
-Controls
-Key	Action
-1	Set brush size to small
-2	Set brush size to medium
-3	Set brush size to large
-E	Toggle eraser mode
-C	Clear the canvas
-S	Save the drawing (air_canvas_output.png)
-Q	Quit the application
+---
 
-How to Run
-Clone this repository
+##  How to Run
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/air-canvas.git
-cd air-canvas
-Install requirements
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/yourusername/air-canvas.git
+   cd air-canvas
 
-bash
-Copy
-Edit
-pip install opencv-python numpy
-Run the script
+2. **Install dependencies**
+   ```bash
+   pip install opencv-python numpy
 
-bash
-Copy
-Edit
-python air_can.py
+3. **Run the Script**
+   ```bash
+   python air_can.py
+   
+##  Requirements
 
-Requirements
-Python 3.x
+- Python 3.x
+- OpenCV (`opencv-python`)
+- NumPy
 
-OpenCV (opencv-python)
+---
 
-NumPy
+## Notes
 
-Notes
-Make sure your webcam is connected and working.
+- Make sure your webcam is connected and working.
+- Use colored objects that match the defined HSV ranges in the script.
+- Good lighting improves detection accuracy.
+- Adjust HSV values if you want to detect different colors.
 
-Use colored objects that match the predefined HSV ranges (or tweak them in the script).
+---
 
-Works best in good lighting conditions for accurate color detection.
+## License
 
-Example
-Draw with your hands in the air and see your creation appear live!
-
-Credits
-Made with ❤️ using OpenCV and Python.
-
-License
-This project is open-source under the MIT License.
-
+This project is licensed under the **MIT License**.  
+Feel free to use, modify, and share — just keep the original license notice!
